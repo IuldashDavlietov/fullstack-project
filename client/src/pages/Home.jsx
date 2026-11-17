@@ -19,12 +19,10 @@ import {
 import { toast } from 'react-toastify'
 import { FaTrashCanArrowUp, FaPlus, FaListCheck } from 'react-icons/fa6'
 import { FiEdit } from 'react-icons/fi'
-import { FcCancel } from 'react-icons/fc'
-import { TiCancelOutline } from 'react-icons/ti'
 import { MdOutlineCancel } from 'react-icons/md'
 import { RiSendInsLine } from 'react-icons/ri'
 
-const BASE_URL = 'http://localhost:8000/todos/'
+const BASE_URL = import.meta.env.VITE_BASE_URL
 
 export default function Home() {
 
