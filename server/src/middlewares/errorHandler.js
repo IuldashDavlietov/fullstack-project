@@ -1,0 +1,11 @@
+'use strict';
+
+module.exports = (err, req, res, next) => {
+    res.status(res.errorStatusCode ?? 500).send({
+        success: false,
+        message: err.message,
+        cause: err.cause,
+        stack: err.stack
+    });
+};
+
