@@ -13,7 +13,7 @@ const PORT = process.env.PORT;
 
 const cors = require('cors')
 const corsOptions = {
-  origin: ["http://localhost:5173",'https://todos-app-dhyz.onrender.com/'],
+  origin: ["http://localhost:5173",'https://todos-app-dhyz.onrender.com'],
   methods: "GET, PUT, POST, DELETE, PATCH",
   allowedHeaders: ["Content-Type", "Authorization"],
   exposedHeaders: ["Content-Length", "X-Custom-Header"],
